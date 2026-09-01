@@ -1,0 +1,945 @@
+/* =====================================================
+   AMMA BHAVANI YOUTH ASSOCIATION
+   BEAUTIFUL & PROFESSIONAL CSS
+   ===================================================== */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 6%;
+
+    background: linear-gradient(
+        135deg,
+        #7b0015,
+        #b5122d,
+        #e31b3f
+    );
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+
+    box-shadow:
+        0 0 10px rgba(255, 215, 0, 0.8),
+        0 0 25px rgba(255, 215, 0, 0.35);
+
+    animation: logoGlow 3s infinite alternate;
+}
+
+@keyframes logoGlow {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+
+    to {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+    }
+}
+
+
+.logo-text h1 {
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.logo-text p {
+    color: #ffd700;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 9px 15px;
+
+    border-radius: 25px;
+
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ffd700;
+    color: #8b0015;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   HOME / HERO
+   ===================================================== */
+
+.hero {
+    min-height: 680px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(45, 0, 0, 0.65),
+            rgba(100, 0, 20, 0.70)
+        ),
+        url("images/durga.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+
+    position: relative;
+}
+
+
+/* Golden decorative glow */
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 215, 0, 0.12);
+
+    filter: blur(50px);
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+
+    animation: heroAppear 1.3s ease;
+}
+
+@keyframes heroAppear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hero-small {
+    color: #ffd700;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+
+.hero h2 {
+    color: #ffd700;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    font-size: 20px;
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ---------- JOIN BUTTON ---------- */
+
+.join-button {
+    display: inline-block;
+
+    padding: 13px 32px;
+
+    background: #ffd700;
+
+    color: #850016;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.join-button:hover {
+    background: white;
+
+    transform: translateY(-5px) scale(1.04);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =====================================================
+   SECTION COMMON STYLE
+   ===================================================== */
+
+section {
+    padding: 75px 7%;
+}
+
+section h2 {
+    text-align: center;
+
+    color: #a30d27;
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+
+/* Golden line below headings */
+
+section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 75px;
+    height: 4px;
+
+    margin: 12px auto 0;
+
+    background: #e3ad22;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   ABOUT US
+   ========================= */
+
+.about {
+    padding: 90px 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #fff8ed,
+            #fff1dc,
+            #fffaf2
+        );
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-top {
+    color: #b8860b;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.about h2 {
+    font-size: 42px;
+    color: #8b0018;
+    margin: 10px 0;
+}
+
+.about .gold-line {
+    width: 80px;
+    height: 4px;
+    background: #d4af37;
+    margin: 20px auto 30px;
+    border-radius: 10px;
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+
+    font-size: 19px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Cards */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.about-card {
+    background: white;
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    border-top: 4px solid #c40024;
+
+    box-shadow:
+        0 10px 30px rgba(100, 0, 20, 0.12);
+
+    transition: 0.35s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 35px rgba(100, 0, 20, 0.22);
+}
+
+.about-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    color: #9b001c;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Devotional message */
+
+.devotion-message {
+    margin: 55px auto 0;
+
+    max-width: 850px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b0018,
+            #c40024
+        );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(100, 0, 20, 0.25);
+}
+
+.devotion-message span {
+    font-size: 30px;
+}
+
+.devotion-message p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .about-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .about {
+        padding: 65px 15px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about-intro {
+        font-size: 16px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .devotion-message {
+        padding: 22px 15px;
+        gap: 10px;
+    }
+
+    .devotion-message p {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   PROGRAMS
+   ===================================================== */
+
+.events {
+    background:
+        linear-gradient(
+            135deg,
+            #fff8ed,
+            #fff
+        );
+}
+
+
+.events-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ---------- EVENT CARD ---------- */
+
+.event-box {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border-left: 6px solid #c41532;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition: all 0.35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Golden shine */
+
+.event-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    background: rgba(255, 215, 0, 0.12);
+
+    border-radius: 50%;
+
+    right: -25px;
+    top: -25px;
+}
+
+
+.event-box:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(150, 0, 30, 0.18);
+
+    border-left-color: #e5b21b;
+}
+
+
+.event-box h3 {
+    color: #a20c27;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+.event-box p {
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   GALLERY
+   ===================================================== */
+
+.gallery {
+    background: #fffaf4;
+
+    text-align: center;
+}
+
+
+.gallery-intro {
+    color: #777;
+
+    margin-top: -20px;
+
+    margin-bottom: 35px;
+}
+
+
+/* Gallery grid */
+
+.gallery-container {
+    max-width: 800px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Square photo */
+
+.gallery-item {
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    border: 3px solid #e2b329;
+
+    background: white;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.35s ease;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+.gallery-item:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(120, 0, 20, 0.25);
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.12);
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact {
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5e7,
+            #fff
+        );
+}
+
+
+.contact > p {
+    font-size: 18px;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.contact-box {
+    max-width: 550px;
+
+    margin: 0 auto 30px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.contact-box p {
+    margin: 10px;
+
+    font-size: 17px;
+}
+
+
+/* ---------- WHATSAPP ---------- */
+
+.whatsapp-button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #25d366;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+
+.whatsapp-button:hover {
+    transform: translateY(-4px);
+
+    background: #1ebe5d;
+
+    box-shadow:
+        0 10px 25px rgba(37, 211, 102, 0.45);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background:
+        linear-gradient(
+            135deg,
+            #62000f,
+            #970d25,
+            #6d0013
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+.footer-logo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 2px solid #ffd700;
+}
+
+
+.footer-logo h3 {
+    color: #ffd700;
+
+    margin-bottom: 3px;
+}
+
+
+.footer-logo p {
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+.copyright {
+    font-size: 14px;
+
+    color: #eee;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    padding-top: 18px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding: 12px 3%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .site-header {
+        position: relative;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .logo-area {
+        justify-content: center;
+    }
+
+
+    nav {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    nav a {
+        font-size: 14px;
+
+        padding: 7px 10px;
+    }
+
+
+    .hero {
+        min-height: 600px;
+
+        background-attachment: scroll;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    section {
+        padding: 55px 20px;
+    }
+
+
+    section h2 {
+        font-size: 28px;
+    }
+
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    .logo-text h1 {
+        font-size: 19px;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
