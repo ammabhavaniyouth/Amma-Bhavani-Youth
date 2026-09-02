@@ -185,7 +185,8 @@
 
                 <div class="gallery-item">
                     <img src="Durga-image.jpg"
-                         alt="Amma Bhavani">
+                         alt="Amma Bhavani"
+                        onclick="openImage">
                 </div>
 
                 <div class="gallery-item">
@@ -240,3 +241,23 @@
 </body>
 
 </html>
+<div id="imageViewer" class="image-viewer" onclick="closeImage()">
+
+    <span class="close-button">&times;</span>
+
+    <img id="fullImage" src="" alt="Full size image">
+
+</div>
+
+<script>
+
+function openImage(image) {
+    document.getElementById("imageViewer").style.display = "flex";
+    document.getElementById("fullImage").src = image.src;
+}
+
+function closeImage() {
+    document.getElementById("imageViewer").style.display = "none";
+}
+
+</script>
