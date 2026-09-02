@@ -943,3 +943,36 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* NAVIGATION BUTTONS */
+
+nav a {
+    display: inline-block;
+
+    background: #000000;
+    color: #ffffff !important;
+
+    padding: 10px 18px;
+    margin: 4px;
+
+    border: 2px solid #ffd700;
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* WHEN TOUCHED / HOVERED */
+
+nav a:hover {
+    background: #ffd700;
+    color: #000000 !important;
+}
+
+/* CURRENT PAGE */
+
+nav a.active {
+    background: #ffd700;
+    color: #000000 !important;
+}
