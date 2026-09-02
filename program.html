@@ -1,7 +1,1147 @@
-<nav>
-    <a href="index.html">Home</a>
-    <a href="index.html#about">About Us</a>
-    <a href="programs.html">Programs</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="index.html#contact">Contact</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sri Navaratri – Avatharalu & Karyakramalu | Amma Bhavani Youth Association</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ================= PROGRAMS PAGE ================= */
+
+        .programs-page {
+            background: #fff8ed;
+            min-height: 100vh;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .program-hero {
+            min-height: 380px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 80px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(120, 0, 0, 0.65),
+                    rgba(120, 0, 0, 0.65)
+                ),
+                url("Durga-image.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+        }
+
+
+        .program-hero-content {
+            max-width: 900px;
+        }
+
+
+        .program-small-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffd700;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .program-hero h1 {
+            font-size: 42px;
+            margin: 10px 0;
+
+            color: #ffffff;
+
+            text-shadow:
+                2px 2px 5px #4d0000;
+        }
+
+
+        .program-hero p {
+            font-size: 18px;
+            line-height: 1.7;
+
+            margin-top: 15px;
+        }
+
+
+        /* ================= INTRO ================= */
+
+        .program-intro {
+            text-align: center;
+
+            max-width: 850px;
+
+            margin: 50px auto 30px;
+
+            padding: 0 20px;
+        }
+
+
+        .program-intro h2 {
+            color: #9b0000;
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .program-intro .gold-line {
+            width: 100px;
+            height: 4px;
+
+            background: #d4a017;
+
+            margin: 15px auto 20px;
+
+            border-radius: 5px;
+        }
+
+
+        .program-intro p {
+            color: #555;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ================= PROGRAM CONTAINER ================= */
+
+        .programs-container {
+
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: 40px auto 70px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+
+        /* ================= PROGRAM CARD ================= */
+
+        .program-card {
+
+            background: #ffffff;
+
+            border-radius: 18px;
+
+            padding: 28px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border: 1px solid #f0d18a;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.10);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .program-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 6px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #8b0000,
+                    #d4a017,
+                    #8b0000
+                );
+        }
+
+
+        .program-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.18);
+        }
+
+
+        /* ================= DAY NUMBER ================= */
+
+        .program-date {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .date-box {
+
+            width: 70px;
+            height: 70px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #8b0000,
+                    #c40000
+                );
+
+            color: white;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-shrink: 0;
+
+            box-shadow:
+                0 5px 12px rgba(120, 0, 0, 0.3);
+        }
+
+
+        .date-box .day-number {
+
+            font-size: 24px;
+
+            font-weight: bold;
+        }
+
+
+        .date-box .day-text {
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+        }
+
+
+        .day-title {
+
+            color: #9b0000;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            line-height: 1.4;
+        }
+
+
+        /* ================= AVATHARAM ================= */
+
+        .avatar-symbol {
+
+            text-align: center;
+
+            font-size: 42px;
+
+            margin: 5px 0 10px;
+        }
+
+
+        .avatar-name {
+
+            text-align: center;
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            color: #8b0000;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* ================= PROGRAM ================= */
+
+        .program-label {
+
+            display: inline-block;
+
+            background: #fff0c2;
+
+            color: #8b0000;
+
+            padding: 7px 14px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        .program-description {
+
+            color: #555;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            margin: 0;
+        }
+
+
+        /* ================= SPECIAL DAY ================= */
+
+        .special-day {
+
+            border: 2px solid #d4a017;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fffdf3,
+                    #fff3cf
+                );
+        }
+
+
+        .special-day .day-title {
+
+            color: #7a0000;
+        }
+
+
+        /* ================= FINAL MESSAGE ================= */
+
+        .program-message {
+
+            width: 90%;
+
+            max-width: 900px;
+
+            margin: 0 auto 60px;
+
+            text-align: center;
+
+            background: #8b0000;
+
+            color: white;
+
+            padding: 35px 25px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .program-message h2 {
+
+            color: #ffd700;
+
+            margin-bottom: 12px;
+
+            font-size: 28px;
+        }
+
+
+        .program-message p {
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            margin: 0;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        .program-footer {
+
+            background: #5c0000;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+            font-size: 14px;
+        }
+
+
+        .program-footer .blessing {
+
+            color: #ffd700;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            .program-hero {
+
+                min-height: 320px;
+
+                padding: 60px 15px;
+            }
+
+
+            .program-hero h1 {
+
+                font-size: 30px;
+            }
+
+
+            .program-small-title {
+
+                font-size: 14px;
+            }
+
+
+            .program-hero p {
+
+                font-size: 15px;
+            }
+
+
+            .program-intro {
+
+                margin-top: 35px;
+            }
+
+
+            .program-intro h2 {
+
+                font-size: 25px;
+            }
+
+
+            .programs-container {
+
+                grid-template-columns: 1fr;
+
+                width: 92%;
+
+                gap: 20px;
+            }
+
+
+            .program-card {
+
+                padding: 23px 18px;
+            }
+
+
+            .date-box {
+
+                width: 60px;
+                height: 60px;
+            }
+
+
+            .date-box .day-number {
+
+                font-size: 21px;
+            }
+
+
+            .day-title {
+
+                font-size: 17px;
+            }
+
+
+            .avatar-name {
+
+                font-size: 22px;
+            }
+
+
+            .program-message {
+
+                width: 88%;
+
+                padding: 28px 18px;
+            }
+
+
+            .program-message h2 {
+
+                font-size: 23px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="programs-page">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="Durga-image.jpg"
+                 alt="Amma Bhavani">
+
+            <span>
+                Amma Bhavani Youth Association
+            </span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#about">
+                About Us
+            </a>
+
+            <a href="programs.html" class="active">
+                Programs
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="program-hero">
+
+        <div class="program-hero-content">
+
+            <div class="program-small-title">
+                🙏 AMMA BHAVANI YOUTH ASSOCIATION 🙏
+            </div>
+
+            <h1>
+                🔱 Sri Navaratri 🔱
+            </h1>
+
+            <p>
+                Avatharalu & Karyakramalu
+            </p>
+
+            <p>
+                🌺 Ten Days of Divine Devotion, Pooja & Celebration 🌺
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="program-intro">
+
+        <h2>
+            🔱 Sri Navaratri Avatharalu & Karyakramalu 🚩
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+            With the divine blessings of Amma Bhavani,
+            Amma Bhavani Youth Association welcomes everyone
+            to participate in our Sri Navaratri celebrations.
+            Each day is dedicated to a special form of Devi
+            with devotional pooja and spiritual programs.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= PROGRAMS ================= -->
+
+    <section class="programs-container">
+
+
+
+        <!-- DAY 1 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        01
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Bala Tripura Sundari
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Bala Tripura Sundari
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi Pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 2 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        02
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Gayatri Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Gayatri Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 3 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        03
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Annapurna Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Annapurna Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 4 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        04
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Lalitha Tripura Sundari
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Lalitha Tripura Sundari
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 5 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        05
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Shakambari Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Shakambari Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 6 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        06
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Saraswathi Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Saraswathi Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 7 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        07
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Mahalaxmi Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Mahalaxmi Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 8 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        08
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Durga Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Durga Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 9 -->
+
+        <div class="program-card">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        09
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Mahishasura Mardhini
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Mahishasura Mardhini
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and devotional programs.
+            </p>
+
+        </div>
+
+
+
+        <!-- DAY 10 -->
+
+        <div class="program-card special-day">
+
+            <div class="program-date">
+
+                <div class="date-box">
+
+                    <span class="day-number">
+                        10
+                    </span>
+
+                    <span class="day-text">
+                        Day
+                    </span>
+
+                </div>
+
+                <div class="day-title">
+                    Sri Rajarajeshwari Devi
+                </div>
+
+            </div>
+
+
+            <div class="avatar-symbol">
+                🔱
+            </div>
+
+
+            <div class="avatar-name">
+                Sri Rajarajeshwari Devi
+            </div>
+
+
+            <span class="program-label">
+                🙏 Karyakramam
+            </span>
+
+            <p class="program-description">
+                Devi pooja and nimmarjanam.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ================= FINAL MESSAGE ================= -->
+
+    <section class="program-message">
+
+        <h2>
+            🌺 Jai Amma Bhavani 🌺
+        </h2>
+
+        <p>
+            May Amma Bhavani bless everyone with
+            peace, prosperity, happiness and strength.
+            Let us celebrate Sri Navaratri with
+            devotion, unity and service.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="program-footer">
+
+        <div class="blessing">
+            🔱 Jai Amma Bhavani 🔱
+        </div>
+
+        <p>
+            © 2026 Amma Bhavani Youth Association.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
