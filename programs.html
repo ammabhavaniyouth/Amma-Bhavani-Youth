@@ -12,7 +12,79 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+/* ================= FINAL MOBILE FIX ================= */
 
+html,
+body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+.programs-container {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+    max-width: 600px !important;
+
+    margin: 40px auto 60px !important;
+
+    padding: 0 18px !important;
+
+    box-sizing: border-box !important;
+
+    gap: 24px !important;
+}
+
+.program-card {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+
+    box-sizing: border-box !important;
+
+    padding: 28px 22px !important;
+}
+
+
+/* PHONE SCREEN */
+
+@media screen and (max-width: 768px) {
+
+    .programs-container {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .program-card {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        padding: 25px 20px !important;
+    }
+}
         /* ================= PROGRAMS PAGE ================= */
 
         .programs-page {
