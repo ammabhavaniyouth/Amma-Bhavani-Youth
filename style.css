@@ -1134,3 +1134,245 @@ header nav a.active {
         font-size: 22px;
     }
 }
+/* =========================================================
+   PREMIUM DEVOTIONAL NAVARATRI DESIGN
+   Amma Bhavani Youth Association
+   ========================================================= */
+
+body {
+    background:
+        radial-gradient(circle at top, rgba(255, 215, 0, 0.08), transparent 35%),
+        linear-gradient(135deg, #240000, #5c0000 50%, #180000);
+}
+
+/* PREMIUM HEADINGS */
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: #ffd700 !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* DEVOTIONAL GOLD DIVIDER */
+h2::after {
+    content: " ✦ 🪔 ✦ ";
+    display: block;
+    color: #ffd700;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* HEADER */
+header {
+    background:
+        linear-gradient(rgba(70,0,0,0.94), rgba(20,0,0,0.97)),
+        url("Durga-image.jpg") center/cover;
+    border-bottom: 3px solid #ffd700 !important;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.45);
+}
+
+/* NAVIGATION */
+header nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+}
+
+header nav a {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffd700 !important;
+    border-radius: 22px !important;
+    padding: 6px 12px !important;
+    margin: 2px !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+}
+
+header nav a:hover {
+    background: #ffd700 !important;
+    color: #4b0000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255,215,0,0.35);
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    border-bottom: 3px solid #ffd700;
+}
+
+.hero::after {
+    content: "🪔  जय माता दी  🪔";
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: #ffd700;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-shadow: 0 2px 8px #000;
+}
+
+/* SECTIONS */
+section {
+    position: relative;
+}
+
+section:not(.hero)::before {
+    content: "✦";
+    display: block;
+    text-align: center;
+    color: #ffd700;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* CARDS */
+.card,
+.program-card,
+.president-card,
+.instagram-section {
+    background: linear-gradient(145deg, #ffffff, #fff8e7) !important;
+    border: 2px solid #d4a017 !important;
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.22),
+        inset 0 0 18px rgba(212,160,23,0.08);
+    border-radius: 18px !important;
+}
+
+.card:hover,
+.program-card:hover,
+.president-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 14px 30px rgba(0,0,0,0.28),
+        0 0 15px rgba(255,215,0,0.18);
+}
+
+/* PROGRAM TITLES */
+.program-card h2,
+.program-card h3 {
+    color: #8b0000 !important;
+    font-family: Georgia, serif;
+}
+
+.program-card p {
+    color: #4a2a2a !important;
+}
+
+/* PRESIDENT */
+.president-card h3 {
+    color: #8b0000 !important;
+    font-family: Georgia, serif;
+}
+
+/* INSTAGRAM */
+.instagram-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-section::before {
+    content: "🪔";
+    display: block;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.instagram-section h3 {
+    color: #8b0000 !important;
+    font-family: Georgia, serif;
+}
+
+/* GALLERY */
+.gallery img {
+    border: 3px solid #d4a017 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(255,215,0,0.25);
+}
+
+/* CONTACT */
+#contact {
+    background:
+        linear-gradient(rgba(80,0,0,0.94), rgba(35,0,0,0.97));
+    color: #ffffff;
+    border-top: 2px solid #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+#contact h2,
+#contact h3 {
+    color: #ffd700 !important;
+}
+
+#contact p,
+#contact a {
+    color: #ffffff !important;
+}
+
+/* FOOTER */
+footer {
+    background: #080000 !important;
+    color: #ffd700 !important;
+    border-top: 3px solid #ffd700 !important;
+    text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header nav {
+        padding: 5px 4px !important;
+        gap: 2px !important;
+    }
+
+    header nav a {
+        padding: 6px 10px !important;
+        margin: 2px !important;
+        font-size: 13px !important;
+    }
+
+    .hero::after {
+        font-size: 16px;
+        bottom: 12px;
+    }
+
+    h2::after {
+        font-size: 15px;
+    }
+
+    .card,
+    .program-card,
+    .president-card,
+    .instagram-section {
+        border-radius: 15px !important;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header nav a {
+        padding: 5px 8px !important;
+        font-size: 12px !important;
+    }
+
+    .hero::after {
+        font-size: 14px;
+    }
+}
