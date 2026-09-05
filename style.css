@@ -1134,7 +1134,43 @@ header nav a.active {
         font-size: 22px;
     }
 }
+/* GOLD + RED + BLACK BACKGROUND */
+body {
+    background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #8b0000 35%,
+        #d40000 60%,
+        #8b0000 80%,
+        #000000 100%
+    ) !important;
+}
 
+/* Hero section */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #8b0000,
+        #d40000,
+        #000000
+    ) !important;
+}
+
+/* Gold headings and highlights */
+h1, h2, h3 {
+    text-shadow: 0 2px 4px #000000;
+}
+
+/* Sections */
+section {
+    background: transparent;
+}
+
+/* Gold decorative line */
+.hero .gold-line {
+    background: #ffd700 !important;
+}
         font-size: 14px;
     }
 }
